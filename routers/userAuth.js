@@ -34,9 +34,7 @@ router.post("/user", async (req, res) => {
   } else if (user) {
     return res.status(400).send("User already exists");
   }
-  // } catch (error) {
-  //     return res.status(500).send("Internal server error")
-  // }
+  
 });
 
 module.exports = router;
